@@ -157,9 +157,10 @@ function App() {
         variant="temporary"
         anchor="top"
         open={editOpen}
-        PaperProps={{style: {width: "50%",position:"absolute",top:"50%",left:"50%",transform:"translateX(-50%) translateY(-50%)"}}
+        PaperProps={{style: {width: "50%",position:"absolute",top:"50%",left:"0",margin:"0 auto"}}
       }>
-        <div style={{padding:10}}>
+        <div style={{padding:10,display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"
+      }}>
           <h2>ToDoの編集</h2>
           <form>
             <input type="text" placeholder="todoを入力してください。" onChange={handleInput} ref={inputRef}/>
